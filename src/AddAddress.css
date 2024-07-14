@@ -1,0 +1,59 @@
+.add-address{
+    width: -webkit-fill-available;
+    height: 50px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    box-shadow: 2px 2px 5px 0 black;
+    background: white;
+    cursor: pointer;
+}
+.add-address:hover{
+    background-color: rgb(238, 238, 238);
+}
+.add-address span {
+    display: inline-block;
+    background: black;
+    border-radius: 20px;
+    height: 30px;
+    width: 30px;
+    line-height: 26px;
+    font-size: 28px;
+    color: white;
+}
+.addresses{
+    /* box-shadow: 2px 2px 5px 0 black; */
+    border-radius: 5px;
+}
+.address{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: 17px;
+    box-shadow: 2px 2px 5px 0 black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.address-selected{
+    border: 2px solid rgb(126, 126, 255)
+}
+.address-edit{
+    padding: 5px 15px;
+    background: red;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.a-a-c{
+
+}

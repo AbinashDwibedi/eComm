@@ -1,0 +1,174 @@
+
+  .cart {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    background: #fff;
+    padding: 20px 0;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: calc(100vh - 65px);
+  }
+  .no-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: calc(100vh - 65px);
+  }
+  .no-cart img{
+    height: 300px;
+
+  }
+  .no-cart h2{
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .left-cart {
+    flex: 2;
+    margin-right: 20px;
+    max-height: calc(100vh - 105px);
+    overflow-y: auto;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 15px;
+  }
+  .home {
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    background: white;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 3px 0;
+    cursor: pointer;
+    transition: all .2s linear;
+    line-height: 30px;
+  }
+  .home:hover{
+    background-color: black;
+  }
+  .home:hover i{
+    color:white;
+  }
+  /* .home i {
+    font-size: 25px;
+  } */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 2px 2px 5px 0 black;
+  }
+  
+  .cart-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .cart-item-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .cart-item-title {
+    flex: 1;
+    font-size: 16px;
+  }
+  
+  .cart-item-price {
+    font-size: 18px;
+    color: #ff6f61;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .cart-item-delete {
+    color: #ff6f61;
+    cursor: pointer;
+    transition: color 0.3s;
+    font-size: 15px;
+  }
+  
+  .cart-item-delete:hover {
+    color: #d9534f;
+  }
+  
+  /* Right Cart (Summary) */
+  .right-cart {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+    margin: 10px 15px;
+  }
+  .right-cart-price{
+    background: white;
+    box-shadow: 2px 2px 5px 0 black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  /* .right-cart-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  } */
+  
+  .right-cart-price ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .right-cart-price-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .right-cart-price-list span {
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 15px;
+  }
+  
+  .checkout-button:hover {
+    background: #0056b3;
+  }
+  
+
+  @media (max-width: 768px) {
+    .cart {
+      flex-direction: column;
+    }
+  
+    .left-cart {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
